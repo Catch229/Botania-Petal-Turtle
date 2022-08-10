@@ -1,4 +1,4 @@
-url = "https://raw.githubusercontent.com/Catch229/Computronics-Jukebox/main/jukebox.lua"
+url = "https://github.com/Catch229/Botania-Petal-Turtle/raw/main/turtle-petal.lua"
 programName = "Botania Petal Automation"
 fileLoc = "turtle-petal.lua"
 
