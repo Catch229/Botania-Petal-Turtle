@@ -3,9 +3,10 @@ slot_two = {}
 
 function shear_plant()
 	rs.setOutput("top", true)
+	while turtle.detect ~= false
 	sleep(0.1)
+	end
 	rs.setOutput("top", false)
-	sleep(0.1)
 end
 
 while true do
@@ -16,8 +17,6 @@ while true do
 		turtle.select(1)
 		turtle.place()
 		turtle.select(2)
-		turtle.place()
-		turtle.select(16)
 		turtle.place()
 		shear_plant()
 		turtle.select(15)
