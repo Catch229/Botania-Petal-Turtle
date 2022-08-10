@@ -1,5 +1,5 @@
-slot_one = []
-slot_two = []
+slot_one = {}
+slot_two = {}
 
 function shear_plant()
 	rs.setOutput("top", true)
@@ -12,7 +12,7 @@ while true do
 	slot_one = turtle.getItemDetail(1)
 	slot_two = turtle.getItemDetail(2)
 	
-	if slot_two[name] == "minecraft:bone" and slot_one[name] == "botania:petal" then
+	if slot_two["name"] == "minecraft:bone" and slot_one["name"] == "botania:petal" then
 		turtle.select(1)
 		turtle.place()
 		turtle.select(2)
