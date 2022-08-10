@@ -3,8 +3,8 @@ slot_two = {}
 
 function shear_plant()
 	rs.setOutput("top", true)
-	while turtle.detect ~= false
-	sleep(0.1)
+	while turtle.detect ~= false do
+		sleep(0.1)
 	end
 	rs.setOutput("top", false)
 end
