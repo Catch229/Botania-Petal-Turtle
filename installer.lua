@@ -40,4 +40,4 @@ else
 	file.close()
 	sleep(1)
 end
-shell.run("monitor", fileLoc, "right")
+shell.run(fileLoc)
