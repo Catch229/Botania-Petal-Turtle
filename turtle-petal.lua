@@ -26,6 +26,12 @@ while true do
 	slot_one = turtle.getItemDetail(1)
 	slot_two = turtle.getItemDetail(2)
 	sleep(0.5)
+
+	turtle.select(15)
+	slot_fifteen = turtle.getItemDetail(15)
+	if slot_fifteen == nil then
+		turtle.suck()
+	end
 	
 	if slot_one and slot_two then
 		if slot_two["name"] == "minecraft:dye" and slot_one["name"] == "botania:petal" then
@@ -34,8 +40,6 @@ while true do
 			turtle.select(2)
 			turtle.place()
 			shear_plant()
-			turtle.select(15)
-			turtle.suck()
 		end
 	end
 end
